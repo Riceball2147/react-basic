@@ -52,7 +52,7 @@ export function Quiz() {
         </div>
       ))}
 
-      <button onClick={checkAnswer}>回答する</button>>
+      <button onClick={checkAnswer}>回答する</button>
       {quizResult && <p>{quizResult}</p>}
     </section>
   );
