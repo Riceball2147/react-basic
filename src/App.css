@@ -95,6 +95,70 @@
   }
 }
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0; /* 外側の余白 */
+  font-family: 'Helvetica', 'Arial', sans-serif; /* フォント */
+}
+
+/* 共通デザイン */
+header, main, footer {
+  padding: 1rem; /* 余白 */
+  border-radius: 12px; /* 要素の角を丸める */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* 影 */
+}
+
+/* メインコンテンツ */
+main {
+  display: grid; /* グリッドレイアウト */
+  grid-template-columns: repeat(2, 1fr); /* コンテンツを2列で表示 */
+  gap: 10px; /* 要素間隔 */
+}
+
+/* リスト */
+ul {
+  list-style: none; /* マーカー非表示 */
+  padding-left: 0; /* リスト左側の余白なし */
+}
+
+li {
+  margin-bottom: 0.3rem; /* リスト下側の余白 */
+}
+
+/* ボタン */
+button {
+  background-color: green; /* 背景色 */
+  color: white; /* 文字色 */
+  border: none; /* 境界線なし */
+  padding: 0.5rem 1rem; /* 内側の余白 */
+  border-radius: 6px; /* 角を丸める */
+  cursor: pointer; /* ポインター */
+  transition: background-color 0.3s; /* 背景色の変化 */
+}
+
+/* ボタンにカーソルが重なったときのスタイル */
+button:hover {
+  background-color: darkgreen; /* 背景色変更 */
+}
+
+/* ライトモード */
+.light {
+  background-color: white;
+  color: black;
+}
+
+/* ダークモード */
+.dark {
+  background-color: black;
+  color: white;
+}
+
 #docs {
   border-right: 1px solid var(--border);
 
@@ -110,7 +174,7 @@
   display: flex;
   gap: 8px;
   margin: 32px 0 0;
-
+/*
   .logo {
     height: 18px;
   }
@@ -152,7 +216,7 @@
     }
   }
 }
-
+*/
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
